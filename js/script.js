@@ -1,1 +1,13 @@
 console.log ("teste")
+
+console.log('comando de saída')
+
+//COMENTÁRIO DE LINHA SIMPLES
+
+/*
+ COMENTÁRIO DE MÚLTIPLAS LINHAS,
+ OU SEJA, POSSO DESCREVER ALGO,
+ NESSE TIPO DE COMENTÁRIO
+*/
+
+//CRIANDO VARIÁVEIS
