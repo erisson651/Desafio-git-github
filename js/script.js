@@ -111,3 +111,14 @@ if(idade >= 18){
 if(idade <18){
     console.log(`COM A IDADE DE`)
 }
+
+//ATIVIDADE DE LOGÍSTICA- 2#
+let distancia = 1000
+let consumo = 30
+let litro = 10
+console.log('quantidade de combustivel nescessário' , distancia / consumo)
+console.log('quantidade À se pagar' , (distância / consumo)* litro)
+
+//ATIVIDADE DE LOGISTICA- #4
+console.log("Erisson")
+console.log()
