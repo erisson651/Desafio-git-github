@@ -97,6 +97,14 @@ if(idade >= 18){
  */
 
    //ANINHAMNETO DE IF
-if(idade <18){
-    console.log(`COM A IDADE DE`)
-}
+   if(idade < 18){
+    console.log(`Com a idade de ${idade}, Não é permitido possuir CNH`)
+    
+       }else if(idade < 50){
+           console.log(`Com a idade de ${idade}, 10 anos para renovar`)
+       
+       } else if(idade < 70){
+           console.log(`Com a idade de ${idade}, 5 anos para renovar`)
+       } else{  
+           console.log(`Com a idade de ${idade}, 3 anos para renovar`)
+    } 
