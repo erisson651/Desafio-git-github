@@ -113,10 +113,10 @@ if(idade <18){
 }
 
 //ATIVIDADE DE LOGÍSTICA- 2#
-let distancia = 1000
+let distância = 1000
 let consumo = 30
 let litro = 10
-console.log('quantidade de combustivel nescessário' , distancia / consumo)
+console.log('quantidade de combustivel nescessário' , distância / consumo)
 console.log('quantidade À se pagar' , (distância / consumo)* litro)
 
 //ATIVIDADE DE LOGISTICA- #4
