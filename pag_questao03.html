@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Combustível</title>
+</head>
+<body>
+
+  <h2>Calculadora de Combustível</h2>
+
+  <form id="formulario-combustivel">
+    <label>Distância a percorrer (km):
+      <input type="number" id="distancia" step="0.1" required>
+    </label>
+    <br><br>
+    <label>Consumo médio do veículo (km/l):
+      <input type="number" id="consumo" step="0.1" required>
+    </label>
+    <br><br>
+    <label>Preço do litro do combustível (R$):
+      <input type="number" id="preco" step="0.01" required>
+    </label>
+    <br><br>
+    <button type="submit">Calcular</button>
+  </form>
+
+  <div id="div-dados"></div>
+
+  <script>
+    document.getElementById("formulario-combustivel").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const distancia = parseFloat(document.getElementById("distancia").value);
+      const consumo = parseFloat(document.getElementById("consumo").value);
+      const preco = parseFloat(document.getElementById("preco").value);
+
+      const litros = distancia / consumo;
+      const total = litros * preco;
+
+      document.getElementById("div-dados").innerHTML = `
+        <p>Quantidade de combustível necessária: <strong>${litros.toFixed(2)} litros</strong><br>
+        Valor total a pagar: <strong>R$ ${total.toFixed(2)}</strong></p>
+      `;
+    });
+  </script>
+
+</body>
+</html>
