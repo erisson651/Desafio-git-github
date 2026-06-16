@@ -7,18 +7,12 @@ formDados.addEventListener('submit', (evt)=>{
     evt.preventDefault()
 
     const objFormDados = new FormData(formDados)
+    let nome = objFormDados.get('nome')
+    let nota1 = parseFloat(objFormDados.get('nota1'))
+    let nota2 = parseFloat(objFormDados.get('nota2'))
+    let nota3 = parseFloat(objFormDados.get('nota3'))
 
-    let distancia = parseFloat(objFormDados.get('distancia'))
-    let consumo = parseFloat(objFormDados.get('consumo'))
-    let gasolina = parseFloat(objFormDados.get('gasolina'))
-
-    let trajetoria = distancia / consumo  
-    let valor = trajetoria * gasolina
-
-    divResultado.innerHTML = `a quantidade de combustivel nescessario sera ${trajetoria.toFixed(1).replace('.',',')}
-    <br> o valor a pagar sera ${valor.toFixed(2).replace('.',',')}
-`
-
+    let media = (noota1 + nota2 + nota 3) / 3
     formDados.reset()
     
     })
