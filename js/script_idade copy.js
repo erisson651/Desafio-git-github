@@ -8,17 +8,6 @@ formDados.addEventListener('submit', (evt)=>{
 
     const objFormDados = new FormData(formDados)
 
-<<<<<<< HEAD
-    let n1 = parseFloat(objFormDados.get('num1'))
-    let n2 = parseFloat(objFormDados.get('num2'))
-    let n3 = parseFloat(objFormDados.get('num3'))
-
-    let MEDIA = (n1 + n2 +n3) / 3
-
-    divResultado.innerHTML = `A MÉDIA DOS NÚMEROS DIGITADOS É: ${MEDIA.toFixed(2).replace('.',',')}`
-
-    formDados.reset()
-=======
     let nome = objFormDados.get('nome')
     let idade = objFormDados.get('idade')
 
@@ -31,6 +20,5 @@ formDados.addEventListener('submit', (evt)=>{
     }
 
     divResultado.innerHTML = situacaoIdade
->>>>>>> bfdfe26d8c8cb2de39d5acb9e8d23784f313f77a
     
     })
